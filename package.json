@@ -10,7 +10,8 @@
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
     "sequelize": "^5.16.0",
-    "socket.io": "^2.2.0"
+    "socket.io": "^2.2.0",
+    "sqlite3": "^4.1.0"
   },
   "scripts": {
     "start": "node ./server/index.js",
