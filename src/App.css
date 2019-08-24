@@ -1,0 +1,103 @@
+body {
+  background: whitesmoke;
+  font-size: 20px;
+  min-width: 660px;
+  overflow: auto;
+  touch-action: manipulation;
+}
+
+label {
+  margin-left: 30px;
+  font-weight: bold;
+  width: 200px;
+  display: inline-block;
+  line-height: 40px;
+}
+
+input {
+  font-weight: bold;
+  height: 32px;
+  margin: 4px 0;
+  padding: 4px 8px;
+  border-radius: 3px;
+  border: 1px solid #bdbdbd;
+  font-size: 20px;
+}
+
+.App {
+  padding: 20px;
+}
+
+.GameTitle {
+  text-align: center;
+  font-weight: bold;
+  color: red;
+  font-size: 28px
+}
+
+.TeamTitle {
+  text-align: center;
+}
+
+.GameStateTitle {
+  text-align: center;
+}
+
+.Leaderboard {
+  margin: 25px auto 0 auto;
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.Leaderboard__left {
+  text-align: left;
+  flex: 1;
+}
+
+.Leaderboard__right {
+  text-align: right;
+  flex: 1;
+}
+
+.LineBox {
+  margin: 25px auto 0 auto;
+  max-width: 600px;
+  height: 240px;
+  background: white;
+  border: 1px solid #bdbdbd;
+  position: relative;
+}
+
+.LEFT_WIN .LineBox,
+.RIGHT_WIN .LineBox {
+  animation: colorchange 5s infinite;
+}
+
+.Line {
+  position: absolute;
+  height: 240px;
+  background-color: red;
+  width: 8px;
+  left: 296px;
+}
+
+@keyframes colorchange {
+  0% {
+    background: red;
+  }
+  25% {
+    background: yellow;
+  }
+  50% {
+    background: red;
+  }
+  75% {
+    background: orange;
+  }
+  100% {
+    background: red;
+  }
+}

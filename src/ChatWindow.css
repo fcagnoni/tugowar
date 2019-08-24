@@ -1,0 +1,41 @@
+.ChatWindow {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.ChatWindow__Controls {
+  max-height: 100px;
+  height: 100px;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ChatWindow__TextInput {
+  flex: 1;
+  margin-right: 20px;
+  border: 1px solid #bdbdbd;
+  border-radius: 3px;
+}
+
+.ChatWindow__SendButton {
+  flex-shrink: 0;
+  flex-grow: 0;
+  width: 200px;
+}
+
+.ChatWindow__Messages {
+  max-height: 100px;
+  height: 100px;
+  max-width: 580px;
+  width: 100%;
+  margin: 0 auto;
+  background: white;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  padding: 10px;
+  overflow: auto;
+  text-align: left;
+}
